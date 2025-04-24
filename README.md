@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+🚀 Project Overview: Deployment link 👇
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://billing-and-stock-management-system.vercel.app/ 
 
-## Available Scripts
+🎨 Frontend
+Built with: React ⚛️ (Functional Components + Hooks)
 
-In the project directory, you can run:
+State Management: useState, useEffect
 
-### `npm start`
+UI/UX:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Responsive design 📱 for all screen sizes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Smooth animations with Framer Motion 🎭
 
-### `npm test`
+Scrollable modals for mobile compatibility 🔄
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚙️ Backend Integration
+Database: Supabase 🛢
 
-### `npm run build`
+Features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Real-time data sync 🔄
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Custom SQL functions for inventory control 📊
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📄 PDF Generation
+Invoices:
 
-### `npm run eject`
+Created using jsPDF 🖨
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Tabular format with jspdf-autotable 📑
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Automatic tax calculations 🧾
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🔗 QR Code Payments
+Technology: qrcode.react 🏦
 
-## Learn More
+Features:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+UPI QR Code with pre-filled payment amount 💰
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+UPI ID: sabarivasan1239@okhdfcbank 🆔
 
-### Code Splitting
+⚠️ Error Handling
+Robust handling of database errors 🛡
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Graceful fallbacks for schema changes 🛠
 
-### Analyzing the Bundle Size
+Clear, user-friendly error messages 🔔
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🗄 Database Schema
 
-### Making a Progressive Web App
+📦 Products Table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Column	Type
+id	Primary Key
+name	String
+price	Number
+quantity	Number
+category	String
+created_at	Timestamp
 
-### Advanced Configuration
+💳 Transactions Table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Column	Type
+id	Primary Key
+customer_name	String
+customer_phone	String
+total_amount	Number
+payment_method	String (Optional)
+items	JSON Array (Purchased Items)
+created_at	Timestamp
