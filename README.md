@@ -1,6 +1,6 @@
 🚀 Project Overview: Deployment link 👇
 
-https://billing-and-stock-management-system.vercel.app/ 
+https://billing-stock-management-system.vercel.app/
 
 🎨 Frontend
 Built with: React ⚛️ (Functional Components + Hooks)
